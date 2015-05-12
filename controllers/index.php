@@ -6,4 +6,5 @@ class Index
 				echo "We are in index.";
 			}
 	}
+	
 ?>
