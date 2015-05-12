@@ -1,5 +1,7 @@
 <?php
-$url=explode('/',$_GET['url']);
+$url=$_GET['url'];
+$url=rtrim($url,'/');
+$url=explode('/',$url);
 print_r($url);
 require 'controllers/'.$url[0].'.php';
 $controller=new $url[0];
